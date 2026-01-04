@@ -1,0 +1,46 @@
+% MATLAB code to perform addition, subtraction, multiplication, and division of two sequences
+
+% Define the two sequences
+x = [1, 2, 3, 4, 5]; % First sequence
+y = [5, 4, 3, 2, 1]; % Second sequence
+
+% Perform operations
+addition = x + y;
+subtraction = x - y;
+multiplication = x .* y; % Element-wise multiplication
+division = x ./ y; % Element-wise division
+
+% Plot the results
+figure;
+
+% Plot addition
+subplot(2, 2, 1);
+stem(addition, 'filled', 'r');
+grid on;
+title('Addition of Sequences');
+xlabel('Index');
+ylabel('Value');
+
+% Plot subtraction
+subplot(2, 2, 2);
+stem(subtraction, 'filled', 'g');
+grid on;
+title('Subtraction of Sequences');
+xlabel('Index');
+ylabel('Value');
+
+% Plot multiplication
+subplot(2, 2, 3);
+stem(multiplication, 'filled', 'b');
+grid on;
+title('Multiplication of Sequences');
+xlabel('Index');
+ylabel('Value');
+
+% Plot division
+subplot(2, 2, 4);
+stem(division, 'filled', 'm');
+grid on;
+title('Division of Sequences');
+xlabel('Index');
+ylabel('Value');
